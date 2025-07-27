@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buka 9 Foods and Eateries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <img src="file_00000000af106246aa6002f6f99cdbaa.png" alt="Buka 9 Foods and Eateries logo">
+            <h1> Buka 9 Foods and Eateries </h1>
+        </div>
+        
+  <!--For Navbar-->
+  <nav>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+      
+      <a class="home-link" href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Foreign Dishes</a>
+      <a href="#">Contact</a>
+      <a href="#">Login</a>
+    </div>
+  </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+    <div class="hero-content">
+    <h1>Fresh from di Farm and na for You we Make Am!</h1>
+    
+    <div class="card-container">
+      <div class="card">
+            <img src="images/Sushi_platter.jpg">
+            <button>Order Now</button>
+      </div>
+      <div class="card">
+            <img src="images/Asian-Chilli-Garlic-Prawns-1_5.webp">
+            <button>Order Now</button>
+      </div>
+      <div class="card">
+            <img src="images/2-Kimly-Live-Seafood-Salted-Crab.jpg">
+            <button>Order Now</button>
+      </div>
+    </div>
+    </div>
+    <div class="bottom-content">
+    <p>Inspired by the seasons and driven by original taste, our menu turns fresh ingredients into unforgettable meals</p>
+    <button class="cta-btn" type="button">
+            Book A Table
+        </button>
+    </div>
+    </section>
+ 
+ <!--For the Menu now-->
+    <div class="menu-container">
+        <div class="card">
+          <h1>Jollof Rice</h1>
+          <img src="images/7499757JollofriceChefJohn4x3-d601da10d7e845d1ad4c8656a5b87ed4.webp">
+          <p>Classic Party Rice with spicy tomato sauce</p>
+          <div class="price-bar">
+          <h2>Price: N1500</h2>
+          </div>
+            <button>Add To Plate</button>
+        </div>
+        <div class="card">
+          <h1>Egusi Soup</h1>
+          <img src="images/20220425-Egusi-Maureen-Celestine-26-hero-1-608f079ef8ae4b8b840e61e44ecb766a.webp">
+          <p>Melon seed soup with assorted meats</p>
+          <div class="price-bar">
+          <h2>Price: N2000</h2>
+          </div>
+            <button>Add To Plate</button>
+        </div>
+        <div class="card">
+          <h1>Oha Soup</h1>
+          <img src="/images/ofe-oha-soup-recipe.jpg">
+          <p>Soft akpu served with rich Oha Soup</p>
+          <div class="price-bar">
+          <h2>Price: N1800</h2>
+          </div>
+            <button>Add To Plate</button>
+        </div>
+        <div class="card">
+          <h1>Suya</h1>
+          <img src="images/7_file.webp">
+          <p>Spicy grilled meat with onions and pepper</p>
+          <div class="price-bar">
+          <h2>Price: N700</h2>
+          </div>
+            <button>Add To Plate</button>
+        </div>
+        <div class="card">
+          <h1>Ofada Rice</h1>
+          <img src="images/Ofada-and-Ayamase-sauce.webp">
+          <p>Unpolished rice served with pepper sauce</p>
+          <div class="price-bar">
+          <h2>Price: N1700</h2>
+          </div>
+            <button>Add To Plate</button>
+        </div>
+        <div class="card">
+          <h1>Beans and Plantain</h1>
+          <img src="images/IMG_8252-scaled.jpg">
+          <p>Nigerian beans porridge with fried plantain</p>
+          <div class="price-bar">
+          <h2>Price: N1400</h2>
+          </div>
+            <button>Add To Plate</button>
+        </div>
+    </div>
+ 
+<!--For the Cart-->
+    <div class="cart-container">
+      <h2>Your Plate</h2>
+      <ul id="cart-items"></ul>
+      <div id="total">Total: N0</div>
+      <button id="submit-order">Place Your Order</button>
+      <button id="print-order">Print</button>
+      <div id="loader" style="display:none;">Placing...</div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      &copy; 2025 The Buka 9. All Rights Reserved.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
