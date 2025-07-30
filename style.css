@@ -187,6 +187,7 @@ nav svg {
   padding:10px 0;
   margin-top:auto;
 }
+
 .hero p {
     font-weight:bold;
     font-size:1.3em;
@@ -362,7 +363,7 @@ footer {
   justify-content:center;
 }
 
-@media(max-width:480px) {
+@media(max-width:768px) {
   .links-container {
     display:none;
     flex-direction:column;
@@ -402,9 +403,7 @@ footer {
     left:0;
     z-index:9;
   }
-}
 
-@media (max-width: 768px) {
   header {
     padding: 8px;
   }
@@ -414,18 +413,77 @@ footer {
   }
 
   .logo h1 {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .hero {
-    height: 50vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-wrap:wrap;
+    height: 60vh;
+    margin:0 auto;
     padding: 8px;
     gap: 8px;
   }
+  
+  .hero .hero-content {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    flex-grow:1;
+    width:100%;
+    text-align:center;
+    margin:20px 0 0;
+  }
 
   .hero h1 {
-    font-size: 2.5em;
+    font-size:1.6em;
     line-height: 1.1;
+    margin:0;
+  }
+  
+  .card-container {
+    display:flex;
+    flex-direction:row;
+    box-sizing:border-box;
+    width:100%;
+    max-width:360px;
+    max-height:50%;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-basis:100%;
+    flex-grow:0;
+    margin:0 auto 20px;
+    padding: 8px 0;
+    gap:10px;
+  }
+
+  .card-container .card {
+    display:flex;
+    flex:1 1 calc(33.33% - 10px);
+    box-sizing:border-box;
+    flex-direction:column;
+    justify-content:space-between;
+    overflow:hidden;
+    width:200px;
+    margin: 8px 0;
+    padding: 12px;
+    min-height:100%;
+  }
+  
+  
+  .card-container .card img {
+    max-height:100px;
+    margin-bottom:8px;
+    aspect-ratio:1/1;
+  }
+
+  .card-container .card button {
+    padding: 5px 8px;
+    font-size: 0.5em;
   }
 
   .hero p {
@@ -435,27 +493,6 @@ footer {
 
   .hero .cta-btn {
     padding: 8px 16px;
-    font-size: 0.9em;
-  }
-
-  .card-container {
-    padding: 8px 0;
-  }
-
-  .card-container .card {
-    flex-basis: 100%;
-    width: 100%;
-    margin: 8px 0;
-    padding: 15px;
-    min-height: 200px;
-  }
-
-  .card-container .card img {
-    max-height: 150px;
-  }
-
-  .card-container .card button {
-    padding: 8px 10px;
     font-size: 0.9em;
   }
 
