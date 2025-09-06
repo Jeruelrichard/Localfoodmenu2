@@ -4,10 +4,10 @@
 }
 
 :root {
-  --primary-color:white;
-  --accent-color:rgb(239,177,29);
-  --text-color:black;
-  --click-color:blue;
+  --primary-color: white;
+  --accent-color: rgb(239,177,29);
+  --text-color: black;
+  --click-color: blue;
 }
 
 * {
